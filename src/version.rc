@@ -1,0 +1,43 @@
+#include <windows.h>
+
+// Version resource for forbiddeneffects.dll.
+// Populates the DLL's metadata (Details tab in Explorer) so it reads as
+// real, authored software instead of a blank-metadata binary. This lowers
+// the odds of AV/ML false positives, which weight empty version info as
+// a "suspicious" signal.
+
+#define FE_VER_MAJOR 1
+#define FE_VER_MINOR 0
+#define FE_VER_PATCH 0
+#define FE_VER_BUILD 0
+#define FE_VER_STR   "1.0.0.0"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    FE_VER_MAJOR,FE_VER_MINOR,FE_VER_PATCH,FE_VER_BUILD
+ PRODUCTVERSION FE_VER_MAJOR,FE_VER_MINOR,FE_VER_PATCH,FE_VER_BUILD
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      0x0L
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_DLL
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"   // U.S. English, Unicode
+        BEGIN
+            VALUE "CompanyName",      "Serpentarius Studio"
+            VALUE "FileDescription",  "Forbidden Effects - xOBSE plugin for Oblivion"
+            VALUE "FileVersion",      FE_VER_STR
+            VALUE "InternalName",     "forbiddeneffects"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 Serpentarius Studio"
+            VALUE "OriginalFilename", "forbiddeneffects.dll"
+            VALUE "ProductName",      "Forbidden Effects"
+            VALUE "ProductVersion",   FE_VER_STR
+            VALUE "Comments",         "Lets the player forbid chosen magic effects for themselves only. Open-source game mod."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200   // U.S. English (0x409), Unicode (1200)
+    END
+END
