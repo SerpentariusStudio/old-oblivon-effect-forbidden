@@ -132,7 +132,12 @@ and the game runs vanilla — it won't crash you.
 
 ## Credits
 
+Thanks to [llde](https://www.nexusmods.com/profile/llde) for maintaining **xOBSE**, the
+script extender this plugin runs on.
+
 Made with reverse engineering against `Oblivion.exe` 1.2.0.416. Effect names cross‑checked
 against [UESP](https://en.uesp.net/wiki/Oblivion:Magical_Effects).
 
-Permissions: do what you like — just credit if you build on it.
+## License
+
+Released under the [MIT License](LICENSE) — do what you like, just keep the credit.
