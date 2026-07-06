@@ -120,6 +120,7 @@ the Construction Set. If a future game patch changes the target, the plugin refu
 and the game runs vanilla — it won't crash you.
 
 ## List of Effects
+```
 ABAT=0    Absorb Attribute
 ABFA=1    Absorb Fatigue
 ABHE=1    Absorb Health
@@ -281,6 +282,7 @@ ZWRA=1    Summon Faded Wraith
 ZWRL=1    Summon Gloom Wraith
 ZXIV=1    Summon Xivilai
 ZZOM=1    Summon Zombie
+```
 
 ---
 ## Compatibility
